@@ -5,34 +5,34 @@ const testData = [
     title: 'Fruits',
     children: [
       {
-        string: 'Apple',
+        'string': 'Apple',
         'create-email': 'test_create@gmail.com',
         'edit-email': 'test_edit@gmail.com',
         'create-time': 1600111381583,
-        uid: 'AP11200',
-        children: [
+        'uid': 'AP11200',
+        'children': [
           {
-            string: 'Granny Smith',
+            'string': 'Granny Smith',
             'create-email': 'test_create@gmail.com',
             'edit-time': 1600111381583,
             'create-time': 1600111381583,
-            uid: 'AP11200',
+            'uid': 'AP11200',
           },
           {
-            string: 'Gala',
+            'string': 'Gala',
             'create-email': 'test_create@gmail.com',
             'edit-email': 'test_edit@gmail.com',
             'create-time': 1600111381583,
-            uid: 'AP11200',
+            'uid': 'AP11200',
           },
         ],
       },
       {
-        string: 'Orange',
+        'string': 'Orange',
         'create-email': 'test_create@yahoo.com',
         'edit-email': 'test_edit@yahoo.com',
         'create-time': 1600111383054,
-        uid: 'OR11233',
+        'uid': 'OR11233',
       },
     ],
   },
@@ -40,18 +40,18 @@ const testData = [
     title: 'Veggies',
     children: [
       {
-        string: 'Broccoli',
+        'string': 'Broccoli',
         'create-email': 'test_create@gmail.com',
         'edit-email': 'test_edit@gmail.com',
         'create-time': 1600111381600,
-        uid: 'BR11200',
+        'uid': 'BR11200',
       },
       {
-        string: 'Spinach',
+        'string': 'Spinach',
         'create-email': 'test_create@icloud.com',
         'edit-email': 'test_edit@icloud.com',
         'create-time': 1600111389054,
-        uid: 'SP11233',
+        'uid': 'SP11233',
       },
     ],
   },
@@ -70,7 +70,6 @@ test('it returns false if there are any missing properties', () => {
   type requiredKeyTypes = 'create-email' | 'uid' | 'create-time' | 'string'
   const requiredKeys = ['create-email', 'uid', 'create-time', 'string']
   requiredKeys.forEach(key => {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     const invalidRoamString = JSON.stringify([
       {
         ...testData[0],

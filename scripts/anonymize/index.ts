@@ -139,6 +139,9 @@ const anonymizeState = (state: UserState, options: Options = {}) => {
 /*****************************************************************
  * MAIN
  *****************************************************************/
+/**
+ *
+ */
 const main = () => {
   // validate
   if (process.argv.length < 3) {
@@ -163,19 +166,12 @@ const main = () => {
 
   const stateNew = anonymizeState(state, options)
 
-  console.log('')
-  console.log('Parents:', Object.values(stateNew.thoughtIndex).length)
-  console.log('Lexemes:', Object.values(stateNew.lexemeIndex).length)
-  console.log('')
-
   // write
   const fileOut = `${fileIn.slice(0, -'.json'.length)}.anonymized.json`
 
   if (options.dry) {
-    console.log('Done')
   } else {
     fs.writeFileSync(fileOut, JSON.stringify(stateNew, null, 2))
-    console.log(`Output state written to: ${fileOut}`)
   }
 }
 

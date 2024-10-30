@@ -55,7 +55,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'show',
+      'a': 'show',
       'a/b': 'show',
     })
   })
@@ -72,7 +72,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'show',
       'a/b/c': 'show',
     })
@@ -91,7 +91,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'show',
       'a/b/c': 'show',
       'a/d': 'dim',
@@ -110,7 +110,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'show',
       'a/b/c': 'show',
     })
@@ -129,7 +129,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'hide-parent',
+      'a': 'hide-parent',
       'a/b': 'dim',
       'a/b/c': 'show',
       'a/b/c/d': 'show',
@@ -149,7 +149,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'hide',
+      'a': 'hide',
       'a/b': 'dim',
       'a/b/c': 'show',
       'a/b/c/d': 'show',
@@ -170,7 +170,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'hide',
+      'a': 'hide',
       'a/b': 'hide',
       'a/b/c': 'dim',
       'a/b/c/d': 'show',
@@ -192,7 +192,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'show',
+      'a': 'show',
       'a/b': 'show',
       'a/b/c': 'show',
       'a/b/c/d': 'show',
@@ -230,9 +230,9 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'show',
+      'a': 'show',
       'a/b': 'show',
-      x: 'dim',
+      'x': 'dim',
     })
   })
 
@@ -249,10 +249,10 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'show',
       'a/b/c': 'show',
-      x: 'hide-parent',
+      'x': 'hide-parent',
     })
   })
 
@@ -270,11 +270,11 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toEqual({
-      a: 'hide',
+      'a': 'hide',
       'a/b': 'dim',
       'a/b/c': 'show',
       'a/b/c/d': 'show',
-      x: 'hide',
+      'x': 'hide',
     })
   })
 
@@ -294,7 +294,7 @@ describe('normal view', () => {
     }))
 
     expect(autofocusMap).toEqual({
-      a: 'hide-parent',
+      'a': 'hide-parent',
       'a/b': 'dim',
       'a/b/c': 'show',
       'a/b/c/d': 'show',
@@ -318,7 +318,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toMatchObject({
-      a: 'show',
+      'a': 'show',
       'a/b': 'show',
       'a/b/c': 'dim',
       'a/d': 'show',
@@ -341,7 +341,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toMatchObject({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'dim',
       'a/b/c': 'dim',
       'a/d': 'show',
@@ -364,9 +364,9 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toMatchObject({
-      a: 'dim',
+      'a': 'dim',
       'a/b': 'dim',
-      c: 'show',
+      'c': 'show',
       'c/d': 'show',
     })
   })
@@ -388,7 +388,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toMatchObject({
-      a: 'hide-parent',
+      'a': 'hide-parent',
       'a/b': 'hide-parent',
       'a/b/c': 'hide',
       'a/d': 'dim',
@@ -418,7 +418,7 @@ describe('normal view', () => {
       [key]: calculateAutofocus(stateNew, simplePath),
     }))
     expect(autofocusMap).toMatchObject({
-      a: 'hide',
+      'a': 'hide',
       'a/b': 'dim',
       'a/b/c': 'show',
       'a/b/c/d': 'show',

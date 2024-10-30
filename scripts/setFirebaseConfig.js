@@ -36,14 +36,9 @@ function runFirebaseConfigSet(keyValues) {
     const args = ['functions:config:set'].concat(keyValues)
     const cmd = spawn('firebase', args, { shell: true })
     cmd.stdout.setEncoding('utf8')
-    cmd.stderr.on('data', data => {
-      console.log('error:', cmd.stderr.toString())
-    })
-    cmd.stdout.on('data', data => {
-      console.log(data)
-    })
+    cmd.stderr.on('data', data => {})
+    cmd.stdout.on('data', data => {})
     cmd.on('close', code => {
-      console.log(`exit code: ${code}`)
       resolve(code)
     })
   })
@@ -55,7 +50,6 @@ const initScript = async () => {
   const stdinInput = await readInput()
   const json = JSON.parse(stdinInput)
   const keyValues = parse(json)
-  // console.log('Configuration keys \n', keyValues.map(it => '\t▸ ' + it).join('\n'))
   await runFirebaseConfigSet(keyValues)
 }
 

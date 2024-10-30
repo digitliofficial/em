@@ -172,9 +172,9 @@ const globalCss = defineGlobalStyles({
     lineHeight: 1.25,
   },
   /* Disables pull-to-refresh but allows overscroll glow effects. */
-  body: { overscrollBehaviorY: 'contain', color: 'fg', backgroundColor: 'bg' },
-  button: { fontSize: '1.2em' },
-  a: {
+  'body': { overscrollBehaviorY: 'contain', color: 'fg', backgroundColor: 'bg' },
+  'button': { fontSize: '1.2em' },
+  'a': {
     cursor: 'pointer',
     textDecorationLine: 'underline',
     outline: 'none',
@@ -182,22 +182,22 @@ const globalCss = defineGlobalStyles({
     fontWeight: 400,
     userSelect: 'none',
   },
-  h1: {
+  'h1': {
     fontSize: '32px',
     fontWeight: 400,
     marginTop: '0',
     marginBottom: '12px',
   },
-  h2: {
+  'h2': {
     fontSize: '100%',
     fontWeight: 300,
     borderBottom: 'solid 1px {colors.fg}',
     marginBottom: '25px',
   },
-  ul: { marginLeft: '1.5em', paddingLeft: '0' },
+  'ul': { marginLeft: '1.5em', paddingLeft: '0' },
   'ul ul': { marginLeft: '1.2em' },
-  li: { listStyle: 'none' },
-  input: {
+  'li': { listStyle: 'none' },
+  'input': {
     color: 'fg',
     border: 'solid 1px {colors.bgMuted}',
     backgroundColor: 'bg',
@@ -226,8 +226,8 @@ const globalCss = defineGlobalStyles({
     position: 'relative',
     bottom: '1px',
   },
-  label: { display: 'block' },
-  textarea: {
+  'label': { display: 'block' },
+  'textarea': {
     width: 'calc(100% - 40px)',
     display: 'block',
     margin: '0 auto',
@@ -238,7 +238,7 @@ const globalCss = defineGlobalStyles({
     color: 'fg',
     backgroundColor: 'bg',
   },
-  code: {
+  'code': {
     backgroundColor: { base: '#ccc', _dark: '#333' },
     fontFamily: 'monospace',
   },

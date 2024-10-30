@@ -19,28 +19,28 @@ const testData: RoamPage[] = [
     title: 'Fruits',
     children: [
       {
-        string: 'Apple',
+        'string': 'Apple',
         'create-email': 'test_create@gmail.com',
         'edit-email': 'test_edit@gmail.com',
         'create-time': 1600111381583,
         'edit-time': 1600111381580,
-        uid: 'UK11200',
+        'uid': 'UK11200',
       },
       {
-        string: 'Orange',
+        'string': 'Orange',
         'create-email': 'test_create@yahoo.com',
         'edit-email': 'test_edit@yahoo.com',
         'create-time': 1600111383054,
         'edit-time': 1600111383050,
-        uid: 'UK11233',
+        'uid': 'UK11233',
       },
       {
-        string: 'Banana',
+        'string': 'Banana',
         'create-email': 'test_create@icloud.com',
         'edit-email': 'test_edit@icloud.com',
         'create-time': 1600111383911,
         'edit-time': 1600111383910,
-        uid: 'HMN_YQtZZ',
+        'uid': 'HMN_YQtZZ',
       },
     ],
   },
@@ -48,20 +48,20 @@ const testData: RoamPage[] = [
     title: 'Veggies',
     children: [
       {
-        string: 'Broccoli',
+        'string': 'Broccoli',
         'create-email': 'test_create@gmail.com',
         'edit-email': 'test_edit@gmail.com',
         'create-time': 1600111381600,
         'edit-time': 1600111381599,
-        uid: 'BK11200',
+        'uid': 'BK11200',
       },
       {
-        string: 'Spinach',
+        'string': 'Spinach',
         'create-email': 'test_create@icloud.com',
         'edit-email': 'test_edit@icloud.com',
         'create-time': 1600111389054,
         'edit-time': 1600111389050,
-        uid: 'BK11233',
+        'uid': 'BK11233',
       },
     ],
   },
@@ -132,26 +132,26 @@ test('it should convert a Roam json into a list of thoughts and subthoughts with
       title: 'September 4th, 2020',
       children: [
         {
-          string: 'A',
+          'string': 'A',
           'create-email': 'test_create@gmail.com',
           'create-time': 1600111381583,
-          children: [
+          'children': [
             {
-              string: 'B',
+              'string': 'B',
               'create-email': 'test_create@gmail.com',
               'create-time': 1600111383054,
-              children: [
+              'children': [
                 {
-                  string: 'C',
+                  'string': 'C',
                   'create-email': 'test_create@gmail.com',
                   'create-time': 1600111383911,
-                  uid: 'HMN_YQtZZ',
+                  'uid': 'HMN_YQtZZ',
                 },
               ],
-              uid: 'JBXKlMcxh',
+              'uid': 'JBXKlMcxh',
             },
           ],
-          uid: '0VQBPmUiy',
+          'uid': '0VQBPmUiy',
         },
       ],
     },
@@ -159,26 +159,26 @@ test('it should convert a Roam json into a list of thoughts and subthoughts with
       title: 'September 5th, 2020',
       children: [
         {
-          string: 'X',
+          'string': 'X',
           'create-email': 'test_create@gmail.com',
           'create-time': 1600111456859,
-          children: [
+          'children': [
             {
-              string: 'Y',
+              'string': 'Y',
               'create-email': 'test_create@gmail.com',
               'create-time': 1600111457621,
-              children: [
+              'children': [
                 {
-                  string: '[[September 4th, 2020]]',
+                  'string': '[[September 4th, 2020]]',
                   'create-email': 'test_create@gmail.com',
                   'create-time': 1600111458385,
-                  uid: 'Wt5NR3b56',
+                  'uid': 'Wt5NR3b56',
                 },
               ],
-              uid: 'obXRTMWqJ',
+              'uid': 'obXRTMWqJ',
             },
           ],
-          uid: 'Pu444IoIi',
+          'uid': 'Pu444IoIi',
         },
       ],
     },

@@ -121,13 +121,13 @@ const Tutorial: FC = () => {
   return (
     <div
       className={css({
-        padding: '40px 20px 20px',
-        backgroundColor: { base: '#ddd', _dark: '#212121' },
-        position: 'relative',
-        zIndex: 'tutorial',
-        color: 'fg',
+        'padding': '40px 20px 20px',
+        'backgroundColor': { base: '#ddd', _dark: '#212121' },
+        'position': 'relative',
+        'zIndex': 'tutorial',
+        'color': 'fg',
         '& p': {
-          marginTop: '20px',
+          'marginTop': '20px',
           '&:first-child': { marginTop: '0' },
         },
       })}

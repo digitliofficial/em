@@ -7,7 +7,7 @@ import './env'
 
 // import is not working in commonjs build
 // require only works with node-fetch v2
-// eslint-disable-next-line @typescript-eslint/no-var-requires
+
 const fetch = require('node-fetch')
 
 // MetricType enum does not seem to be properly exported from prom-client.
@@ -72,7 +72,7 @@ const observe = async (
   try {
     await fetch(apiUrl, {
       method: 'POST',
-      headers: { Authorization: `Bearer ${bearer}`, 'Content-Type': 'application/json' },
+      headers: { 'Authorization': `Bearer ${bearer}`, 'Content-Type': 'application/json' },
       body: JSON.stringify(observationsNormalized),
     })
   } catch (err: any) {
@@ -107,10 +107,7 @@ const observeThrottled = throttleConcat(
 )
 
 // noop if env vars are not set
-const observeMetric = hasGraphiteCredentials
-  ? observeThrottled
-  : // eslint-disable-next-line @typescript-eslint/no-empty-function
-    () => {}
+const observeMetric = hasGraphiteCredentials ? observeThrottled : () => {}
 
 /**
  * Push default metrics to Grafana on an interval. The function client.collectDefaultMetrics must already have been called.

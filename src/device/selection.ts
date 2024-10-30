@@ -1,5 +1,3 @@
-/* eslint-disable no-restricted-properties */
-
 /** Wraps the browser Selection API in a device-agnostic interface. */
 import SplitResult from '../@types/SplitResult'
 

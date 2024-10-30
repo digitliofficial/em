@@ -48,9 +48,6 @@ const subcommands = {
       {} as Index<Parent>,
     )
 
-    console.log(`Converted: ${converted}`)
-    console.log(`Missing contexts: ${missing}`)
-
     return {
       ...state,
       thoughtIndex: thoughtIndexNew,
@@ -65,6 +62,9 @@ const subcommands = {
   },
 } as Index<(state: RemoteState) => any>
 
+/**
+ *
+ */
 const main = () => {
   const [, , subcommand, inputPath] = process.argv
 

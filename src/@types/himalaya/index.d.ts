@@ -24,6 +24,5 @@ declare module 'himalaya' {
 
   export type HimalayaNode = Element | Comment | Text
 
-  // eslint-disable-next-line
   export function parse(str: String, options?: Index<string>): HimalayaNode[]
 }

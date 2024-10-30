@@ -3,12 +3,12 @@ import { defineRecipe } from '@pandacss/dev'
 const thoughtRecipe = defineRecipe({
   className: 'thought',
   base: {
-    maxWidth: '100%',
+    'maxWidth': '100%',
     /* do not set font-weight or it will override =heading style. */
-    marginTop: '0',
-    display: 'inline-block',
-    verticalAlign: 'top',
-    whiteSpace: 'pre-wrap',
+    'marginTop': '0',
+    'display': 'inline-block',
+    'verticalAlign': 'top',
+    'whiteSpace': 'pre-wrap',
     '@media (max-width: 500px)': {
       marginTop: { _android: '-2.1px' },
       marginLeft: { _android: '0.5em' },

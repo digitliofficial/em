@@ -47,8 +47,8 @@ const isIOSSafari = isTouch && isiPhone && isSafari()
 
 const glyph = cva({
   base: {
-    fill: { base: 'rgba(39, 39, 39, 1)', _dark: 'rgba(217, 217, 217, 1)' },
-    position: 'relative',
+    'fill': { base: 'rgba(39, 39, 39, 1)', _dark: 'rgba(217, 217, 217, 1)' },
+    'position': 'relative',
     '@media (max-width: 500px)': {
       _android: {
         position: 'relative',
@@ -72,7 +72,7 @@ const glyph = cva({
     leaf: { true: {} },
     showContexts: {
       true: {
-        _mobile: {
+        '_mobile': {
           fontSize: '80%',
           left: '-0.08em',
           top: '0.05em',
@@ -97,11 +97,11 @@ const glyph = cva({
     // childrenNew currently unused as NewThought is not importing Bullet
     childrenNew: {
       true: {
-        content: "'+'",
-        left: '-0.15em',
-        top: '-0.05em',
-        marginRight: '-0.3em',
-        _mobile: {
+        'content': "'+'",
+        'left': '-0.15em',
+        'top': '-0.05em',
+        'marginRight': '-0.3em',
+        '_mobile': {
           left: '0.05em',
           top: '-0.1em',
           marginRight: '-0.1em',
@@ -130,9 +130,9 @@ const glyph = cva({
       leaf: true,
       showContexts: true,
       css: {
-        fontSize: '90%',
-        top: '-0.05em',
-        _mobile: {
+        'fontSize': '90%',
+        'top': '-0.05em',
+        '_mobile': {
           top: '0',
           left: '-0.3em',
           marginRight: 'calc(-0.48em - 5px)',
@@ -215,8 +215,8 @@ const glyphFg = cva({
     },
     graypulse: {
       true: {
-        color: '#666',
-        fill: '#666',
+        'color': '#666',
+        'fill': '#666',
         '-webkit-animation': {
           base: 'toblack 400ms infinite alternate ease-in-out',
           _dark: 'towhite 400ms infinite alternate ease-in-out',
@@ -514,7 +514,7 @@ const Bullet = ({
       className={cx(
         bullet({ invalid }),
         css({
-          _mobile: {
+          '_mobile': {
             marginRight: showContexts ? '-1.5px' : undefined,
           },
           '@media (min-width: 560px) and (max-width: 1024px)': {
@@ -528,10 +528,10 @@ const Bullet = ({
               marginLeft: '-3px',
             },
           },
-          display: bulletIsDivider,
-          position: 'absolute',
-          verticalAlign: 'top',
-          cursor: 'pointer',
+          'display': bulletIsDivider,
+          'position': 'absolute',
+          'verticalAlign': 'top',
+          'cursor': 'pointer',
         }),
       )}
       style={{

@@ -156,12 +156,12 @@ const Invites = () => {
             <div
               key={`${id}-gift-code`}
               className={css({
-                display: 'flex',
-                flexDirection: 'row',
-                alignSelf: 'start',
-                margin: '3vh auto',
-                alignItems: 'center',
-                width: '100%',
+                'display': 'flex',
+                'flexDirection': 'row',
+                'alignSelf': 'start',
+                'margin': '3vh auto',
+                'alignItems': 'center',
+                'width': '100%',
                 '@media only screen and (min-width: 767px)': {
                   width: '80%',
                 },
@@ -180,8 +180,8 @@ const Invites = () => {
                 onBlur={() => setFocusedGiftCode(null)}
                 onFocus={() => onInviteCodeSeen(id)}
                 className={css({
-                  margin: '0 10px',
-                  minWidth: '180px',
+                  'margin': '0 10px',
+                  'minWidth': '180px',
                   '@media only screen and (min-width: 767px)': {
                     minWidth: '300px',
                   },

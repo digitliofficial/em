@@ -5,13 +5,13 @@ const anchorButtonRecipe = defineRecipe({
   className: 'anchor-button',
   description: 'Styles for <a> buttons',
   base: {
-    padding: '0.5em 2em',
-    minWidth: '6em',
-    textDecoration: 'none',
-    display: 'inline-block',
-    borderRadius: '99px',
-    color: 'bg',
-    backgroundColor: 'fg',
+    'padding': '0.5em 2em',
+    'minWidth': '6em',
+    'textDecoration': 'none',
+    'display': 'inline-block',
+    'borderRadius': '99px',
+    'color': 'bg',
+    'backgroundColor': 'fg',
     // '&:active:': { // this was in App.css, appears to be overridden though by &:hover, &:active below, found in global styles
     //   backgroundColor: { base: '#111', _dark: '#dcdcdc' },
     // },
@@ -91,9 +91,9 @@ const anchorButtonRecipe = defineRecipe({
     },
     outline: {
       true: {
-        backgroundColor: 'bg',
-        border: `solid 1px {colors.fg}`,
-        color: 'fg',
+        'backgroundColor': 'bg',
+        'border': `solid 1px {colors.fg}`,
+        'color': 'fg',
         // TODO: make sure this works
         '&:hover, &:active': {
           backgroundColor: 'gray15',

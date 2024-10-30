@@ -120,14 +120,14 @@ class ModalComponent extends React.Component<ModalProps> {
             // TODO: should be controlled by hideClose, not class
             <a
               className={css({
-                position: 'absolute',
-                top: '-5px',
-                right: '-5px',
-                fontSize: '12px',
-                verticalAlign: 'middle',
-                textAlign: 'center',
-                padding: '10px',
-                display: 'none',
+                'position': 'absolute',
+                'top': '-5px',
+                'right': '-5px',
+                'fontSize': '12px',
+                'verticalAlign': 'middle',
+                'textAlign': 'center',
+                'padding': '10px',
+                'display': 'none',
                 '& span': {
                   display: 'inline-block',
                   width: '11px',

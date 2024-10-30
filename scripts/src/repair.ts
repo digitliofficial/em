@@ -56,6 +56,9 @@ if (!args.w) {
   console.info('Executing dry-run')
 }
 
+/**
+ *
+ */
 const filterChildrenBy = (children: Index<Thought>, predicate: (thought: Thought) => boolean) =>
   Object.entries(children || {}).reduce(
     (accum, [key, id]) => ({
@@ -143,6 +146,9 @@ const moveThought = (thought: ThoughtDb, parentId: ThoughtId) => {
   }
 }
 
+/**
+ *
+ */
 const moveThoughtToOrphanage = (thought: ThoughtDb) => {
   // create orphanage if it doesn't exist
   if (!db.thoughtIndex.orphanage) {
@@ -559,21 +565,21 @@ const color = (n: number) => (s?: string) => chalk[n === 0 ? 'green' : n < 1000 
 
 const table = new Table({
   chars: {
-    top: '',
+    'top': '',
     'top-mid': '',
     'top-left': '',
     'top-right': '',
-    bottom: '',
+    'bottom': '',
     'bottom-mid': '',
     'bottom-left': '',
     'bottom-right': '',
-    left: '',
+    'left': '',
     'left-mid': '',
-    mid: '',
+    'mid': '',
     'mid-mid': '',
-    right: '',
+    'right': '',
     'right-mid': '',
-    middle: '',
+    'middle': '',
   },
   colAligns: ['right', 'left'],
   rows: [

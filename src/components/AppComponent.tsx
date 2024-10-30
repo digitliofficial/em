@@ -173,12 +173,12 @@ const AppComponent: FC = () => {
 
   const componentClassNames = classNames({
     // mobile safari must be detected because empty and full bullet points in Helvetica Neue have different margins
-    mobile: isTouch,
-    android: isAndroid,
-    native: Capacitor.isNativePlatform(),
+    'mobile': isTouch,
+    'android': isAndroid,
+    'native': Capacitor.isNativePlatform(),
     'drag-in-progress': dragInProgress,
-    chrome: /Chrome/.test(navigator.userAgent),
-    safari: isSafari(),
+    'chrome': /Chrome/.test(navigator.userAgent),
+    'safari': isSafari(),
   })
 
   if (showModal && !modals[showModal]) {
@@ -217,7 +217,7 @@ const AppComponent: FC = () => {
             ) : (
               <SplitPane
                 className={css({
-                  position: 'relative',
+                  'position': 'relative',
                   '& .Pane': {
                     transition: isSplitting ? 'width 0.2s ease' : undefined,
                   },

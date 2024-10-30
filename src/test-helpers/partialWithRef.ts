@@ -6,7 +6,7 @@ type ObjectWithInstanceMethods<T = any, U = any> = {
 }
 
 /** Removes the first item in an array type. */
-// eslint-disable-next-line @typescript-eslint/no-unused-vars
+
 type Tail<T extends any[]> = T extends [infer A, ...infer R] ? R : never
 
 /** Removes the first parameter from each method on an object. */

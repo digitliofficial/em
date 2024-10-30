@@ -116,13 +116,13 @@ const Note = React.memo(({ path }: { path: Path }) => {
       className={cx(
         textNote(),
         css({
-          fontSize: 'sm',
-          lineHeight: 1.25,
+          'fontSize': 'sm',
+          'lineHeight': 1.25,
           // negative margin to compensate for line-height. See .thought-container
-          marginTop: -3,
-          position: 'relative',
-          marginBottom: '2px',
-          paddingBottom: '4px',
+          'marginTop': -3,
+          'position': 'relative',
+          'marginBottom': '2px',
+          'paddingBottom': '4px',
           '@media (max-width: 1024px)': {
             _android: {
               position: 'relative',

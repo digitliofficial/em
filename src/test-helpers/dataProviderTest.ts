@@ -22,9 +22,7 @@ import reducerFlow from '../util/reducerFlow'
 import timestamp from '../util/timestamp'
 
 declare global {
-  // eslint-disable-next-line @typescript-eslint/no-namespace
   namespace jest {
-    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     interface Matchers<R> {
       toHaveOrderedContexts(provider: DataProvider, context1: Context, context2: Context): CustomMatcherResult
     }

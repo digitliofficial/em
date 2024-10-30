@@ -131,24 +131,24 @@ const Sidebar = () => {
         <div
           aria-label='sidebar'
           className={css({
-            background: { base: '#f5f5f5', _dark: '#292a2b' },
-            overflowY: 'scroll',
-            overscrollBehavior: 'contain',
-            boxSizing: 'border-box',
-            width: '100%',
-            height: '100%',
-            color: 'fg',
-            scrollbarWidth: 'thin',
-            lineHeight: 1.8,
+            'background': { base: '#f5f5f5', _dark: '#292a2b' },
+            'overflowY': 'scroll',
+            'overscrollBehavior': 'contain',
+            'boxSizing': 'border-box',
+            'width': '100%',
+            'height': '100%',
+            'color': 'fg',
+            'scrollbarWidth': 'thin',
+            'lineHeight': 1.8,
             '&::-webkit-scrollbar': {
               width: '0px', // Remove scrollbar space
               background: 'transparent', // Optional: just make scrollbar invisible
               display: 'none',
             },
-            userSelect: 'none',
+            'userSelect': 'none',
             // must be position:relative to ensure drop hovers are positioned correctly when sidebar is scrolled
-            position: 'relative',
-            padding: '0 1em',
+            'position': 'relative',
+            'padding': '0 1em',
           })}
           data-scroll-at-edge
         >

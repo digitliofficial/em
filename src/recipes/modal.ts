@@ -80,11 +80,11 @@ const modalRecipe = defineSlotRecipe({
     stack: {
       true: {
         actions: {
-          textAlign: 'center',
+          'textAlign': 'center',
           '@media screen and (min-width: 480px)': {
-            display: 'flex',
-            justifyContent: 'center',
-            alignItems: 'center',
+            'display': 'flex',
+            'justifyContent': 'center',
+            'alignItems': 'center',
             '& > *': {
               marginTop: '1em',
             },

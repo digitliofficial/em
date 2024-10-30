@@ -258,19 +258,19 @@ const Toolbar: FC<ToolbarProps> = ({ customize, onSelect, selected }) => {
             id='toolbar'
             ref={toolbarRef}
             className={css({
-              maxWidth: '100%',
-              position: 'relative',
-              touchAction: 'inherit',
-              display: 'inline-flex',
-              overflowX: 'scroll',
-              zIndex: 'toolbar',
-              alignItems: 'flex-start',
+              'maxWidth': '100%',
+              'position': 'relative',
+              'touchAction': 'inherit',
+              'display': 'inline-flex',
+              'overflowX': 'scroll',
+              'zIndex': 'toolbar',
+              'alignItems': 'flex-start',
               '&::-webkit-scrollbar': {
                 display: 'none',
               },
-              ...(!customize && { maxWidth: 'calc(100% - 4em)', '& > *:last-child': { marginRight: '1em' } }),
-              marginLeft: customize ? -3 : 0,
-              paddingLeft: customize ? 3 : 0,
+              ...(!customize && { 'maxWidth': 'calc(100% - 4em)', '& > *:last-child': { marginRight: '1em' } }),
+              'marginLeft': customize ? -3 : 0,
+              'paddingLeft': customize ? 3 : 0,
             })}
             data-scroll-at-edge={customize}
             onScroll={onScroll}

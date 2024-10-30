@@ -73,10 +73,10 @@ const HamburgerMenu = () => {
         ref={hamburgerMenuRef}
         aria-label='menu'
         className={css({
-          zIndex: 'hamburgerMenu',
-          userSelect: 'none',
-          position: 'fixed',
-          cursor: 'pointer',
+          'zIndex': 'hamburgerMenu',
+          'userSelect': 'none',
+          'position': 'fixed',
+          'cursor': 'pointer',
           /* prevent long press to select */
           /* user-select is not inherited */
           '& *': {
@@ -84,7 +84,7 @@ const HamburgerMenu = () => {
           },
           // On macOS, if the user cancels a drag and then switches tabs, upon returning mouseup will fire at coordinates (0,0), triggering fastClick on any element located at (0,0).
           // Therefore, position the HamburgerMenu at top: 1px so that the sidebar is not accidentally opened on tab change.
-          top: 1,
+          'top': 1,
         })}
         style={{ padding: `${paddingTop}px 15px 10px 15px` }}
         {...fastClick(() => {

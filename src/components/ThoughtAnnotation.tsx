@@ -263,18 +263,18 @@ const ThoughtAnnotation = React.memo(
       <div
         aria-label='thought-annotation'
         className={css({
-          position: 'absolute',
-          pointerEvents: 'none',
-          userSelect: 'none',
-          boxSizing: 'border-box',
-          width: '100%',
+          'position': 'absolute',
+          'pointerEvents': 'none',
+          'userSelect': 'none',
+          'boxSizing': 'border-box',
+          'width': '100%',
           // maxWidth: '100%',
-          marginTop: '0',
-          display: 'inline-block',
-          verticalAlign: 'top',
-          whiteSpace: 'pre-wrap',
+          'marginTop': '0',
+          'display': 'inline-block',
+          'verticalAlign': 'top',
+          'whiteSpace': 'pre-wrap',
           /* override editable-annotation's single line to have same width with .editable. 100% - 1em since .editable has padding-right 1em */
-          maxWidth: ellipsizedUrl ? 'calc(100% - 2em)' : '100%',
+          'maxWidth': ellipsizedUrl ? 'calc(100% - 2em)' : '100%',
           '@media (max-width: 500px)': {
             marginTop: { _android: '-2.1px' },
             marginLeft: { _android: '0.5em' },

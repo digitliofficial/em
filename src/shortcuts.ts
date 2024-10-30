@@ -1,5 +1,3 @@
-/* eslint-disable import/prefer-default-export */
-
 /** Defines global keyboard shortcuts and gestures. */
 import Emitter from 'emitter20'
 import { GestureResponderEvent } from 'react-native'
@@ -291,7 +289,10 @@ export const inputHandlers = (store: Store<State, any>) => ({
 })
 
 /** Converts a gesture letter or event key of an arrow key to an arrow utf8 character. Defaults to input. */
-// eslint-disable-next-line @typescript-eslint/no-extra-parens
+
+/**
+ *
+ */
 const arrowTextToArrowCharacter = (s: string) =>
   (
     ({

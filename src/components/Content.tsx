@@ -87,16 +87,16 @@ const Content: FC = () => {
         id='content'
         ref={contentRef}
         className={css({
-          backgroundColor: 'bg',
-          color: 'fg',
-          padding: '80px 10px 153px 50px',
-          position: 'relative',
-          transition: 'transform 0 ease-out, margin 0 ease-out',
-          boxSizing: 'border-box',
+          'backgroundColor': 'bg',
+          'color': 'fg',
+          'padding': '80px 10px 153px 50px',
+          'position': 'relative',
+          'transition': 'transform 0 ease-out, margin 0 ease-out',
+          'boxSizing': 'border-box',
           // limit line width for easier reading
-          maxWidth: '60em',
-          margin: '0 auto',
-          minHeight: '100vh',
+          'maxWidth': '60em',
+          'margin': '0 auto',
+          'minHeight': '100vh',
           '@media (max-width: 960px)': {
             maxWidth: '80%',
           },

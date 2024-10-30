@@ -17,7 +17,7 @@ const errorsIndex = {
   'auth/wrong-password': 'Invalid username or password',
   'auth/user-not-found': 'User not found',
   'auth/too-many-requests': 'Account temporarily disabled. You can restore it by resetting your password',
-  default: 'Something went wrong',
+  'default': 'Something went wrong',
 }
 
 type errorCode = keyof typeof errorsIndex

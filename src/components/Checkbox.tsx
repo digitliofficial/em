@@ -17,13 +17,13 @@ const CheckboxInput = ({ checked }: { checked?: boolean }) => {
       />
       <span
         className={css({
-          position: 'absolute',
-          top: '0.1em',
-          left: '0.1em',
-          height: '1em',
-          width: '1em',
-          backgroundColor: 'transparent',
-          border: '0.1em solid {colors.fg}',
+          'position': 'absolute',
+          'top': '0.1em',
+          'left': '0.1em',
+          'height': '1em',
+          'width': '1em',
+          'backgroundColor': 'transparent',
+          'border': '0.1em solid {colors.fg}',
           '&::after': {
             /* Create the checkbox/indicator (hidden when not checked) */
             content: "''",
@@ -39,8 +39,8 @@ const CheckboxInput = ({ checked }: { checked?: boolean }) => {
             display: checked ? 'block' : 'none',
           },
           // extend tap area without disrupting padding
-          margin: 10,
-          transform: 'translate(-10px, -10px)',
+          'margin': 10,
+          'transform': 'translate(-10px, -10px)',
         })}
       />
     </>

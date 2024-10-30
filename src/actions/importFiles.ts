@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import * as idb from 'idb-keyval'
 import _ from 'lodash'
 import { nanoid } from 'nanoid'

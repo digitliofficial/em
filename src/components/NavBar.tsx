@@ -33,7 +33,7 @@ const CursorBreadcrumbs = ({ position }: { position: string }) => {
         ...(position === 'bottom' && { width: 'calc(100% - 40px)', paddingLeft: '35px' }),
       })}
       linkCssRaw={css.raw({
-        color: '#999',
+        'color': '#999',
         '&:hover': {
           color: 'fg',
         },
