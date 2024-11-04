@@ -24,6 +24,7 @@ import TutorialHint from './TutorialHint'
 const context2SubthoughtCreated = (
   state: State,
   {
+    // eslint-disable-next-line @typescript-eslint/no-unused-vars
     rootChildren,
     tutorialChoice,
   }: {

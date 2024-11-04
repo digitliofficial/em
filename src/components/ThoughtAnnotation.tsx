@@ -190,6 +190,7 @@ const ThoughtAnnotationContainer = React.memo(
     }, [])
 
     return showSuperscript || url || email || styleAnnotation ? (
+      // eslint-disable-next-line @typescript-eslint/no-use-before-define
       <ThoughtAnnotation
         {...{
           simplePath,

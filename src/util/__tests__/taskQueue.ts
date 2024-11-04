@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 // Explicitly import test function from vitest to access retry option.
 // Otherwise global jest types override vitest/globals.
 import { describe } from 'vitest'

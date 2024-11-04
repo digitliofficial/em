@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import * as idb from 'idb-keyval'
 import _ from 'lodash'
 import { nanoid } from 'nanoid'
@@ -178,7 +178,7 @@ const pullDuplicateDescendants =
 
 /** Action-creator for importFiles. */
 export const importFilesActionCreator =
-  ({ files, insertBefore, path, resume }: ImportFilesPayload): Thunk<Promise<void>> =>
+  ({ files, path, resume }: ImportFilesPayload): Thunk<Promise<void>> =>
   async (dispatch, getState) => {
     if (!files && !resume) {
       throw new Error('importFiles must specify files or resume.')

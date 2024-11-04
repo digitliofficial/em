@@ -46,6 +46,7 @@ const modes: Index<Mode> = {
 /** A modal dialog for signing up, logging in, and resetting password. */
 const ModalAuth = () => {
   /** Checks if the given mode is active. */
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   const isModeActive = (mode: Mode) => activeMode.name === mode.name
 
   const [activeMode, updateActiveMode] = useState(modes.login)
@@ -59,7 +60,7 @@ const ModalAuth = () => {
 
   /** Reset password using reset email. */
   const resetPassword: SubmitAction = useCallback(
-    async (closeModal, email) => {
+    async closeModal => {
       updateIsSubmitting(true)
 
       throw new Error('Not implemented')
@@ -77,7 +78,7 @@ const ModalAuth = () => {
   )
 
   /** Login with email and password. */
-  const loginWithEmailAndPassword: SubmitAction = useCallback(async (closeModal, email, password) => {
+  const loginWithEmailAndPassword: SubmitAction = useCallback(async closeModal => {
     updateIsSubmitting(true)
     throw new Error('Not implemented')
     try {

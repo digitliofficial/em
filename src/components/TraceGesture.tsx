@@ -28,6 +28,7 @@ interface TraceGestureProps {
 const TraceGestureWrapper = (props: TraceGestureProps) => {
   const showModal = useSelector(state => state.showModal)
   const disableGestureTracing = useSelector(getUserSetting(Settings.disableGestureTracing))
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   return <>{!disableGestureTracing && !showModal && <TraceGesture {...props} />}</>
 }
 

@@ -1,4 +1,4 @@
-/* eslint-disable import/prefer-default-export */
+/* eslint-disable @typescript-eslint/no-use-before-define */
 
 /** Defines global keyboard shortcuts and gestures. */
 import Emitter from 'emitter20'
@@ -143,7 +143,7 @@ let commandPaletteGesture: number | undefined
  */
 export const inputHandlers = (store: Store<State, any>) => ({
   /** Handles gesture hints when a valid segment is entered. */
-  handleGestureSegment: ({ gesture, sequence }: { gesture: Direction | null; sequence: GesturePath }) => {
+  handleGestureSegment: ({ sequence }: { gesture: Direction | null; sequence: GesturePath }) => {
     const state = store.getState()
     const experienceMode = getUserSetting(state, Settings.experienceMode)
 
@@ -291,7 +291,10 @@ export const inputHandlers = (store: Store<State, any>) => ({
 })
 
 /** Converts a gesture letter or event key of an arrow key to an arrow utf8 character. Defaults to input. */
-// eslint-disable-next-line @typescript-eslint/no-extra-parens
+
+/**
+ *
+ */
 const arrowTextToArrowCharacter = (s: string) =>
   (
     ({

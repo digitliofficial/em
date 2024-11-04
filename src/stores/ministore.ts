@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-unused-vars */
 import Emitter from 'emitter20'
 import cancellable, { CancellablePromise } from '../util/cancellable'
 

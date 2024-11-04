@@ -67,6 +67,7 @@ function expandThoughts(state: State, path: Path | null): Index<Path | Context> 
     throw new Error(`Invalid path ${path}. No thought found with id ${head(path)}`)
   }
 
+  // eslint-disable-next-line @typescript-eslint/no-use-before-define
   return expandThoughtsRecursive(state, path || HOME_PATH, HOME_PATH)
 }
 

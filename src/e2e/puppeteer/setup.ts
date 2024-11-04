@@ -1,4 +1,3 @@
-/* eslint-disable import/prefer-default-export */
 import chalk from 'chalk'
 import { Browser, ConsoleMessage, Device, Page } from 'puppeteer'
 import sleep from '../../util/sleep'
@@ -51,8 +50,6 @@ const setup = async ({
         break
       case 'info':
       case 'log':
-        // eslint-disable-next-line no-console
-        console[messageType](text)
         break
       // ConsoleMessage 'warning needs to be converted to native console 'warn'
       case 'warn':

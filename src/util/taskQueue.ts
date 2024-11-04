@@ -15,6 +15,7 @@ interface EventListeners<T> {
 // Alternatively, an explicit interface can be defined for the return value.
 class TaskQueueWrapper<T> {
   wrapped() {
+    // eslint-disable-next-line @typescript-eslint/no-use-before-define
     return taskQueue<T>()
   }
 }
@@ -49,10 +50,7 @@ const retriable = <T>(
 }
 
 /** A simple task queue with concurrency. */
-const taskQueue = <
-  // task return type (that gets passed to onStep and onLowStep)
-  T = any,
->({
+const taskQueue = <T = any>({
   concurrency = 8,
   expected: _expected,
   onLowStep,

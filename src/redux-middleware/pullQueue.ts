@@ -1,3 +1,4 @@
+/* eslint-disable @typescript-eslint/no-use-before-define */
 import _ from 'lodash'
 import { ThunkMiddleware } from 'redux-thunk'
 import Index from '../@types/IndexType'
@@ -83,7 +84,7 @@ const appendVisiblePaths = (
 }
 
 /** An action-creator that pulls the =favorite Lexeme and all contexts. */
-const pullFavorites = (): Thunk => async (dispatch, getState) => {
+const pullFavorites = (): Thunk => async dispatch => {
   const lexeme = await db.getLexemeById(hashThought('=favorite'))
   return dispatch(pullAncestors(lexeme?.contexts || [], { force: true, maxDepth: 0 }))
 }
